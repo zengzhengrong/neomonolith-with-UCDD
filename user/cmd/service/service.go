@@ -4,6 +4,16 @@ import (
 	"context"
 	"flag"
 	"fmt"
+	"net"
+	http2 "net/http"
+	"os"
+	"os/signal"
+	"syscall"
+
+	http1 "github.com/GrantZheng/monolith_demo/user/pkg/http"
+	service "github.com/GrantZheng/monolith_demo/user/pkg/service"
+
+	endpoint "github.com/GrantZheng/monolith_demo/user/pkg/endpoint"
 	endpoint1 "github.com/go-kit/kit/endpoint"
 	log "github.com/go-kit/kit/log"
 	prometheus "github.com/go-kit/kit/metrics/prometheus"
@@ -15,16 +25,8 @@ import (
 	http "github.com/openzipkin/zipkin-go/reporter/http"
 	prometheus1 "github.com/prometheus/client_golang/prometheus"
 	promhttp "github.com/prometheus/client_golang/prometheus/promhttp"
-	"net"
-	http2 "net/http"
-	"os"
-	"os/signal"
 	appdash "sourcegraph.com/sourcegraph/appdash"
 	opentracing "sourcegraph.com/sourcegraph/appdash/opentracing"
-	"syscall"
-	endpoint "user/pkg/endpoint"
-	http1 "user/pkg/http"
-	service "user/pkg/service"
 )
 
 var tracer opentracinggo.Tracer

@@ -1,6 +1,6 @@
 package main
 
-import service "user/cmd/service"
+import service "github.com/GrantZheng/monolith_demo/user/cmd/service"
 
 func main() {
 	service.Run()

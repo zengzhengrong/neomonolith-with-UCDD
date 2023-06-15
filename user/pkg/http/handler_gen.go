@@ -4,7 +4,7 @@ package http
 import (
 	http "github.com/go-kit/kit/transport/http"
 	http1 "net/http"
-	endpoint "user/pkg/endpoint"
+	endpoint "github.com/GrantZheng/monolith_demo/user/pkg/endpoint"
 )
 
 // NewHTTPHandler returns a handler that makes a set of endpoints available on

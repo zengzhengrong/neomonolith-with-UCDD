@@ -4,9 +4,10 @@ import (
 	"context"
 	"encoding/json"
 	"errors"
-	http1 "github.com/go-kit/kit/transport/http"
 	"net/http"
-	endpoint "user/pkg/endpoint"
+
+	endpoint "github.com/GrantZheng/monolith_demo/user/pkg/endpoint"
+	http1 "github.com/go-kit/kit/transport/http"
 )
 
 // makeAddHandler creates the handler logic

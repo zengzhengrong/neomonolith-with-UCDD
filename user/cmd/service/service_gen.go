@@ -9,9 +9,9 @@ import (
 	http "github.com/go-kit/kit/transport/http"
 	group "github.com/oklog/oklog/pkg/group"
 	opentracinggo "github.com/opentracing/opentracing-go"
-	endpoint "user/pkg/endpoint"
-	http1 "user/pkg/http"
-	service "user/pkg/service"
+	endpoint "github.com/GrantZheng/monolith_demo/user/pkg/endpoint"
+	http1 "github.com/GrantZheng/monolith_demo/user/pkg/http"
+	service "github.com/GrantZheng/monolith_demo/user/pkg/service"
 )
 
 func createService(endpoints endpoint.Endpoints) (g *group.Group) {

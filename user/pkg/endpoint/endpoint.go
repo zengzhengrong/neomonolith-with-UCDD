@@ -2,8 +2,10 @@ package endpoint
 
 import (
 	"context"
+
+	service "github.com/GrantZheng/monolith_demo/user/pkg/service"
+
 	endpoint "github.com/go-kit/kit/endpoint"
-	service "user/pkg/service"
 )
 
 // AddRequest collects the request parameters for the Add method.
